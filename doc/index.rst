@@ -88,7 +88,7 @@ Results in :
 Estimate of clear-sky radiation
 -------------------------------
 
-Once you calculate azimuth and altitude of the sun, you can predict the direct irradiation from the sun using Pysolar. ``get_radiation_direct()`` returns a value in watts per square meter. As of version 0.7, the function is *not* smart enough to return zeros at night. It does account for the scattering of light by the atmosphere, though it uses an atmospheric model based on data taken in the United States.::
+Once you calculate azimuth and altitude of the sun, you can predict the direct irradiation from the sun using Pysolar. ``get_radiation_direct()`` returns a value in watts per square meter. As of version 0.8, the function is smart enough to return zeros at night. It also accounts for the scattering of light by the atmosphere, though it uses an atmospheric model based on data taken in the United States.::
 
    latitude_deg = 42.206 # positive in the northern hemisphere
    longitude_deg = -71.382 # negative reckoning west from prime meridian in Greenwich, England
